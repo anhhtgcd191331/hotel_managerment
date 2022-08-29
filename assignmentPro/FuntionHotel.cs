@@ -59,10 +59,6 @@ namespace assignmentPro
                     hotel.setPriceRoom(price);
                     hotel.setStatusRoom(status);
                 }
-                else
-                {
-                    Console.Write("Not found");
-                }
             }
         }
         public void remove(string id)
@@ -72,10 +68,6 @@ namespace assignmentPro
                 if (hotel.getIdHotel().Equals(id))
                 {
                     hotels.Remove(hotel);
-                }
-                else
-                {
-                    Console.Write("Not found");
                 }
             }
         }
@@ -87,10 +79,6 @@ namespace assignmentPro
                 if(hotel.getIdHotel().Equals(infor)|| hotel.getNameHotel().Equals(infor)|| hotel.getStandardRoom().Equals(infor)) 
                 {
                     Console.Write(hotel.ToString());
-                }
-                else
-                {
-                    Console.Write("Not found");
                 }
             }
         }
